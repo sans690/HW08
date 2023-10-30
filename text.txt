@@ -1,0 +1,8 @@
+      int minLength = Math.min(curPassword.length(), newPassword.length());
+        for (int i = 0; i < minLength; i++) {
+            if (newPassword.charAt(i) != curPassword.charAt(i)) {
+                return i;
+            }
+        }
+        return minLength;
+    
